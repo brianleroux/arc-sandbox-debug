@@ -1,0 +1,19 @@
+{
+  "name": "sandbox-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "AWS_PROFILE=smallwins AWS_REGION=us-west-1 arc-create",
+    "start": "NODE_ENV=testing AWS_PROFILE=smallwins AWS_REGION=us-west-1 arc-sandbox",
+    "test": "NODE_ENV=testing AWS_PROFILE=smallwins AWS_REGION=us-west-1 tape test/*-test.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@architect/workflows": "^1.0.14",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  }
+}
